@@ -1,4 +1,6 @@
+
 require './lib/ppt'
+
 describe "PC elige" do
 
 	it "obtener eleccion pc" do
