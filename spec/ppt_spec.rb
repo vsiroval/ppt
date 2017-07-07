@@ -9,3 +9,11 @@ describe "PC elige" do
 	end
 	
 end
+
+describe "situación de empate" do
+	it "comprobar empate" do
+		resultado = determine_winner "piedra","piedra"
+		expect(resultado).to eq "Empate"
+	end
+
+end
