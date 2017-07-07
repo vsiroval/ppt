@@ -1,5 +1,6 @@
 require 'sinatra'
 require './lib/ppt'
+
 get '/' do
 	erb :inicioJuego
 end
@@ -15,4 +16,7 @@ post '/resultado' do
     erb :resultado
 end
 
+get '/volver' do
+    erb :index
+end
 
