@@ -3,10 +3,13 @@ def get_computer_choice
 
 	if random_number == 1
 		computer_choice = "piedra"
-	elsif randum_number == 2
+	else if randum_number == 2
 		computer_choice = "papel"
-	elsif random_number == 3
+	
+	else if random_number == 3
 		computer_choice = "tijeras"	
+	end
+	end
 	end
 	
 	return computer_choice
@@ -32,7 +35,9 @@ def determine_winner (user_choice, computer_choice)
 		return "Máquina gana"
 	else
 		return "Ganás vos."
+	end
+  end
 end
 
 
-
+end
