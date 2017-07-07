@@ -9,24 +9,20 @@ Scenario: caja eleccion
 	Then muestro "Ingrese jugada"
 
 Scenario: Ingresar eleccion
-	Given ingreso a PPT
-	When escribo "Piedra"
+	When ingreso a PPT
 	Then aprieto "submit"
-
+	
 Scenario: Mostrar resultado
 	Given ingreso a PPT
-	When escribo "Piedra"
 	Then aprieto "submit"
 	Then muestro "resultado"
 
 Scenario: Mostrar eleccion maquina
 	Given ingreso a PPT
-	When escribo "Piedra"
-	Then aprieto "submit"
+	When aprieto "submit"
 	Then muestro "eleccionMaquina"
 
 Scenario: Mostrar eleccion jugador
 	Given ingreso a PPT
-	When escribo "Piedra"
-	Then aprieto "submit"
+	When aprieto "submit"
 	Then muestro "eleccionJugador: Piedra"

@@ -9,8 +9,9 @@ get '/index' do
 end
 
 post '/resultado' do
-  @choiceHuman = params["jugada"]
+ @choiceHuman = params["submit"]
  @choiceMaquina = get_computer_choice
+ @resultado = determine_winner  @choiceHuman.downcase, @choiceMaquina.downcase
     erb :resultado
 end
 

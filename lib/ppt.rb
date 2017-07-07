@@ -9,35 +9,46 @@ def get_computer_choice
 		computer_choice = "papel"
 	end
 	if random_number == 3
-		computer_choice = "tijeras"	
+		computer_choice = "tijera"	
 	end
 	
 	return computer_choice
 end
 
-=begin
-begin
+
+
 def determine_winner (user_choice, computer_choice)
 
   if user_choice == computer_choice
-  	return "Empate"    
-  elsif user_choice == "piedra"
-	if computer_choice == "tijeras"
+  	return "Empate"
+  end
+    
+  if user_choice == "piedra"
+	if computer_choice == "tijera"
 		return "Ganás vos"
 	else
-		return "Máquinaa gana"
-  elsif user_choice == "papel"
+		return "Máquina gana"
+	end
+  end
+
+  
+  if user_choice == "papel"
 	if computer_choice == "piedra"
 		return "Ganás vos"
 	else
 		return "Máquina gana"
-  elsif user_choice == "tijeras"
+	end
+  end
+  
+   if user_choice == "tijera"
 	if computer_choice == "piedra"
 		return "Máquina gana"
 	else
 		return "Ganás vos."
+	end
+   end
+
 end
-=end
 
 
 
