@@ -15,3 +15,10 @@ describe "situación de empate" do
 	end
 
 end
+
+describe "usuario gana a máquina" do
+	it "" do
+		resultado = determine_winner "piedra", "tijera"
+		expect(resultado).to eq "Ganás vos"
+	end
+end
