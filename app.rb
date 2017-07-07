@@ -1,11 +1,14 @@
 require 'sinatra'
 require './lib/ppt'
 
+@@nombreJuegador=""
 get '/' do
+@@nombreJuegador=""
 	erb :inicioJuego
 end
 
 get '/index' do
+	@@nombreJuegador=params["nombre"]
     erb :index
 end
 

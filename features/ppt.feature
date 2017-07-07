@@ -10,6 +10,7 @@ Scenario: Ingreso al juego
 	Then aprieto "ingreso"
 	And muestro "Ingrese jugada"
 
+
 Scenario: Ingresar eleccion
 	Given ingreso a PPT
 	When muestro "Iniciar juego"
@@ -31,7 +32,7 @@ Scenario: Mostrar eleccion maquina
 	Then aprieto "ingreso"
 	And muestro "Ingrese jugada"
 	And aprieto "submit"
-	Then muestro "eleccionMaquina"
+	Then muestro "eleccion de la maquina"
 
 Scenario: Mostrar eleccion jugador
 	Given ingreso a PPT
@@ -39,7 +40,7 @@ Scenario: Mostrar eleccion jugador
 	Then aprieto "ingreso"
 	And muestro "Ingrese jugada"
 	And aprieto "submit"
-	Then muestro "eleccionJugador: Piedra"
+	Then muestro "eleccion del jugador"
 
 Scenario: Boton volver una vez hecha la jugada
 	Given ingreso a PPT

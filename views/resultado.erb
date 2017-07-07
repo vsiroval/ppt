@@ -1,8 +1,8 @@
 <html>
 <form action="/volver" method="get">
 <p>resultado: <%= @resultado %></p>
-<p>eleccionJugador: <%= @choiceHuman%></p>
-<p>eleccionMaquina: <%= @choiceMaquina%></p>
+<p>eleccion del jugador <%= @@nombreJuegador %> : <%= @choiceHuman%></p>
+<p>eleccion de la maquina: <%= @choiceMaquina%></p>
 <input type="submit" name="Volver" id="Volver" value="Volver">
 </form>
 </html>
